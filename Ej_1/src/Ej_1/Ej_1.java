@@ -22,8 +22,9 @@ public class Ej_1 {
 		if(num == 1) {
 			return 1;
 		}
-		 
-		System.out.println("El factorial de: "+num+" es: " + "=" + num + "*" + (num-1)+"!"  );
-		return num * visualizarRecursion(num-1);
+		System.out.println("Se llamo con" + num);
+		long resultado = num * visualizarRecursion(num-1);
+		System.out.println("El factorial de: "+num+" es: " +resultado + "=" + num + "*" + (num-1)+"!"  );
+		return resultado;
 	}
 }
